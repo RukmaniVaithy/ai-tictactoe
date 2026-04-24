@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-effect"></div>
+    <div class="app-container">
+        <header>
+            <h1>Tic<span>Tac</span>Toe</h1>
+        </header>
+
+        <div class="scoreboard">
+            <div class="score-card player-x">
+                <span class="label">You (X)</span>
+                <span class="score" id="score-x">0</span>
+            </div>
+            <div class="score-card ties">
+                <span class="label">Ties</span>
+                <span class="score" id="score-ties">0</span>
+            </div>
+            <div class="score-card player-o">
+                <span class="label">AI (O)</span>
+                <span class="score" id="score-o">0</span>
+            </div>
+        </div>
+
+        <div class="game-status" id="game-status">Your turn!</div>
+
+        <div class="board" id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <button class="reset-btn" id="reset-btn">
+            Restart Game
+        </button>
+    </div>
+
+    <!-- Modal for game over -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <h2 id="modal-title">You Win!</h2>
+            <button class="primary-btn" id="modal-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
